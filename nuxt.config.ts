@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         locales: ['de', 'en'],
         defaultLocale: 'de',
         defaultTimezone: 'Europe/Berlin',
-        plugins: ['relativeTime', 'isSameOrAfter', 'timezone'],
+        plugins: ['relativeTime', 'isSameOrAfter', 'timezone', 'customParseFormat'],
     },
 
     compatibilityDate: '2024-11-01',

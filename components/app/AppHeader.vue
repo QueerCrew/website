@@ -23,6 +23,7 @@
 <script lang="ts" setup>
     const menu = ref([
         { id: 'startseite', label: 'Startseite', href: '/', children: [] },
+        { id: 'events', label: 'Unsere Events', href: '/events', children: [] },
         { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/queercrew.de/', target: '_blank', children: [] },
         { id: 'discord', label: 'Discord', href: 'https://discord.gg/XENtaUHyVa', target: '_blank', children: [] },
     ])

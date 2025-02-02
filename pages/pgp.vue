@@ -34,6 +34,7 @@
 
 <script lang="ts" setup>
     const NuxtLink = defineNuxtLink({})
+    
     useSeoMeta({
         title: 'Unser PGP Key',
         description: 'Unser PGP Key für die Verschlüsselung von E-Mails.',

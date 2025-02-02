@@ -1,9 +1,8 @@
 <template>
-    <div class="next-meetup shadow-medium">
-        <div class="info-card">
-            <span class="title">Unser nächstes QR_IRL Treffen</span>
-            <span class="description">{{ getNextEventDate().format('dddd, DD. MMMM YYYY [um] HH:mm') }}</span>
-        </div>
+    <div class="qc-event-highlight qc-container">
+        <span class="title" v-show="title">{{ title }}</span>
+
+        <QcEvent :event :show-image="false" class="shadow-lg"/>
 
         <div class="counter">
             <div class="counter-part">
@@ -42,18 +41,19 @@
 </template>
 
 <script lang="ts" setup>
-    // @ts-ignore
-    import dayjsRecur from 'dayjs-recur'
     import dayjs from 'dayjs'
+    import type { Event } from '~/types/event'
 
-    dayjs.extend(dayjsRecur)
+    const props = defineProps({
+        title: {
+            type: String,
+        },
+        event: {
+            type: Object as PropType<Event>,
+            required: true,
+        },
+    })
 
-    const eventDay = ref('Tuesday')
-    const eventWeeks = ref([1, 3])
-    const exceptions = ref([])
-    const startTime = ref([18, 0])
-
-    const nextEvent = computed(() => getNextEventDate())
     const timeToNextEvent = ref({
         days: 0,
         hours: 0,
@@ -61,19 +61,18 @@
         seconds: 0,
     })
 
-    function getNextEventDate() {
-        // @ts-ignore
-        let nextEvent = dayjs().recur().every(eventDay.value).daysOfWeek().every(eventWeeks.value).weeksOfMonthByDay()
-        
-        for (const exception of exceptions.value) {
-            nextEvent = nextEvent.except(exception)
-        }
-        
-        return nextEvent.next(1)[0].hour(startTime.value[0]).minute(startTime.value[1])
-    }
-
     function updateCountdown() {
-        const diff = nextEvent.value.diff(dayjs(), 'second')
+        const diff = props.event.start.diff(dayjs(), 'second')
+
+        if (diff < 0) {
+            timeToNextEvent.value = {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+            }
+            return
+        }
 
         timeToNextEvent.value = {
             days: Math.floor(diff / 86400),
@@ -90,11 +89,12 @@
 </script>
 
 <style lang="sass" scoped>
-    .next-meetup
+    .qc-event-highlight.qc-container
         display: flex
         flex-direction: column
         gap: .25rem
         padding: .25rem
+        color: var(--color-on-primary)
         background: var(--color-primary)
         background-image: url('/images/paper_white.jpg')
         background-size: cover
@@ -102,24 +102,11 @@
         font-family: var(--font-mono)
         border-radius: .75rem
 
-        .info-card
-            display: flex
-            flex-direction: column
-            padding: .75rem
-            background: var(--color-background)
-            background-image: url('/images/paper_black.jpg')
-            background-size: cover
-            background-blend-mode: screen
-            border-radius: .5rem
-
-            .title
-                font-size: 1rem
-                font-weight: 800
-                color: var(--color-text)
-
-            .description
-                font-size: .75rem
-                color: var(--color-text-soft)
+        > .title
+            font-size: 1rem
+            font-weight: 800
+            text-align: center
+            padding-block: .5rem
 
     .counter
         display: flex
@@ -133,7 +120,6 @@
 
             .number
                 display: flex
-                color: var(--color-on-primary)
                 font-size: 2rem
                 line-height: 1
                 font-weight: 800
@@ -147,5 +133,4 @@
 
             .label
                 font-size: .75rem
-                color: #2d2d2d
 </style>
