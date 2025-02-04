@@ -1,13 +1,11 @@
 <template>
-    <section id="content" class="py-16">
+    <QcHero id="hero" title="Impressum"/>
+
+    <section id="content" class="relative z-10 py-16">
         <HeLimiter size="text">
-            <h1>Impressum</h1>
+            <h2 class="mt-0">Anbieter:</h2>
             <p>
-                Diese Seite wird privat betrieben von Alyx Freuwört – Teil der QueerCrew Gruppenleitung. 
-            </p>
-            <h2>Anbieter:</h2>
-            <p>
-                Alyx Freuwört<br>
+                Diese Seite wird privat betrieben von <b>Alyx Freuwört</b> – Teil der QueerCrew Gruppenleitung.<br>
                 Frankfurter Straße 262<br>
                 38122 Braunschweig
             </p>

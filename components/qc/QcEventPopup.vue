@@ -1,5 +1,5 @@
 <template>
-    <IodPopup ref="popup" title="Event" max-width="800px">
+    <IodPopup ref="popup" max-width="500px" placement="right" blur="none" should-close-on-backdrop-click>
         <div class="flex flex-col rounded-[inherit] overflow-hidden">
             <img class="image" v-if="event.image" :src="event.image" :alt="event.title">
             <div class="flex flex-col p-4">
@@ -13,7 +13,7 @@
             </div>
             <div class="flex flex-col p-4 border-t" v-if="event.description" v-html="event.description"></div>
             <div class="flex flex-col p-4 border-t" v-if="event.icsFile">
-                <IodButton :is="NuxtLink" to="/downloads/qc-irl-events.ics" target="_blank" icon-right="event">In Kalendar eintragen</IodButton>
+                <IodButton :is="NuxtLink" to="/downloads/qc-irl-events.ics" target="_blank" color-preset="primary" icon-right="event">In Kalendar eintragen</IodButton>
             </div>
         </div>
     </IodPopup>

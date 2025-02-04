@@ -1,5 +1,5 @@
 <template>
-    <QcHero id="hero" title="Unsere Events"/>
+    <QcHero id="hero" class="mb-[-3rem] pb-[2rem]" title="Unsere Events"/>
 
     <section id="content" class="relative z-10 pb-16">
         <HeLimiter size="text">

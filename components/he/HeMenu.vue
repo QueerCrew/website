@@ -15,7 +15,7 @@
             </ul>
         </nav>
     
-        <IodIconButton class="he-mobile-menu-toggle" type="button" aria-label="Navigation öffnen" icon="menu" variant="contained" size="s" corner="pill" @click="menuPopup.open()" />
+        <IodIconButton class="he-mobile-menu-toggle" type="button" aria-label="Navigation öffnen" icon="menu" variant="contained" @click="menuPopup.open()" />
     
         <IodPopup ref="menuPopup" placement="right" blur="none" should-close-on-backdrop-click>
             <div class="he-mobile-menu menu-main">

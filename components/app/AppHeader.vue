@@ -6,6 +6,10 @@
             </NuxtLink>
             <HeSpacer />
             <HeMenu :menu="menu" />
+            <div class="social-media-wrapper">
+                <IodIconButton class="social-media-button" icon="" variant="contained" :is="NuxtLink" target="_blank" aria-label="Instagram" href="https://www.instagram.com/queercrew.de/" />
+                <IodIconButton class="social-media-button" icon="" variant="contained" :is="NuxtLink" target="_blank" aria-label="Discord" href="https://discord.gg/XENtaUHyVa" />
+            </div>
         </HeLimiter>
         <div class="gay-glow">
             <div class="gay-glow-inner">
@@ -21,11 +25,11 @@
 </template>
 
 <script lang="ts" setup>
+    const NuxtLink = defineNuxtLink({})
+
     const menu = ref([
         { id: 'startseite', label: 'Startseite', href: '/', children: [] },
         { id: 'events', label: 'Unsere Events', href: '/events', children: [] },
-        { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/queercrew.de/', target: '_blank', children: [] },
-        { id: 'discord', label: 'Discord', href: 'https://discord.gg/XENtaUHyVa', target: '_blank', children: [] },
     ])
 </script>
 
@@ -47,7 +51,16 @@
             height: 100%
             display: flex !important
             align-items: center
-            gap: 2rem
+            gap: .5rem
+
+        .social-media-wrapper
+            display: flex
+            align-items: center
+            gap: .5rem
+
+            .social-media-button
+                --local-color-background: var(--color-text-soft)
+                --local-font: var(--font-brand)
 
         .gay-glow
             position: absolute
@@ -87,4 +100,12 @@
 
                 &:nth-child(6)
                     background: var(--color-pride-purple)
+    
+    @media only screen and (max-width: 1023px)
+        header
+            .he-menu
+                order: 2
+
+            .social-media-wrapper
+                order: 1
 </style>

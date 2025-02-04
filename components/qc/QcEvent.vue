@@ -1,5 +1,5 @@
 <template>
-    <div class="qc-event qc-container" @click="popup.open()">
+    <a href="#" class="qc-event qc-container" @click.prevent="popup.open()" @auxclick.prevent="popup.open()">
         <img class="image" v-if="event.image && showImage" :src="event.image" :alt="event.title">
         <div class="text-card">
             <span class="title">{{ event.title }}</span>
@@ -8,7 +8,7 @@
         </div>
 
         <QcEventPopup :event="event" ref="popup"/>
-    </div>
+    </a>
 </template>
 
 <script lang="ts" setup>

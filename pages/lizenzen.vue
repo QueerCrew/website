@@ -1,8 +1,9 @@
 <template>
-    <section id="content" class="py-16">
+    <QcHero id="hero" title="Lizenzen & Bildnachweise"/>
+
+    <section id="content" class="relative z-10 py-16">
         <HeLimiter size="text">
-            <h1>Lizenzen & Bildnachweise</h1>
-            <h2>Schriftlizenzen</h2>
+            <h2 class="mt-0">Schriftlizenzen</h2>
             <p>
                 Poppins: <a href="https://openfontlicense.org/" target="_blank" rel="noopener noreferrer">Open Font License</a><br>
                 Inter: <a href="https://openfontlicense.org/" target="_blank" rel="noopener noreferrer">Open Font License</a><br>

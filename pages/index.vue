@@ -1,18 +1,18 @@
 <template>
-    <QcHero id="hero" title="QueerCrew" subtitle="Deine queere Jugendgruppe in&nbsp;Braunschweig"/>
+    <QcHero id="hero" class="mb-[-3rem] pb-[2rem]" title="QueerCrew" subtitle="Deine queere Jugendgruppe in&nbsp;Braunschweig"/>
 
     <section id="cta" class="relative z-10">
         <HeLimiter size="text">
             <div class="flex flex-col gap-6">
                 <QcEventHighlight title="Unser nächstes Event" :event="nextQCEvent" />
-                <IodButton :is="NuxtLink" to="/events" variant="contained" icon-right="east">Alle Events</IodButton>
+                <IodButton :is="NuxtLink" to="/events" variant="contained" color-preset="primary" icon-right="east">Alle Events</IodButton>
             </div>
         </HeLimiter>
     </section>
 
     <section id="content" class="py-16">
         <HeLimiter size="text">
-            <h2>Über den QC</h2>
+            <h2 class="mt-0">Über den QC</h2>
             <p>
                 Die QueerCrew ist eine Gruppe für junge queere Menschen bis 27.
                 Bei uns findest du eine diverse Community, die dich mit offenen Armen empfängt.

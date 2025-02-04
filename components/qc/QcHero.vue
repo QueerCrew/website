@@ -23,11 +23,9 @@
     .qc-hero.qc-container
         position: relative
         width: 100%
-        height: max(300px, 25vh)
+        height: max(300px, 40vh)
         display: flex
         align-items: center
-        padding-block: 0 2rem
-        margin-block: 0 -3rem
 
         &::before
             content: ''

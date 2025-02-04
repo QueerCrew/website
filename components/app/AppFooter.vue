@@ -43,9 +43,7 @@
         </HeLimiter>
         <hr>
         <HeLimiter class="copyright-row">
-            <small>© {{ new Date().getFullYear() }} Alyx Freuwört</small>
-            <small class="hide">•</small>
-            <small>Designed by <a href="https://freuwoert.com" target="_blank">Alyx Freuwört</a></small>
+            <small>© {{ new Date().getFullYear() }} <a href="https://freuwoert.com" target="_blank">Alyx Freuwört</a></small>
             <small class="hide">•</small>
             <small>Die QueerCrew ist eine Jugendgruppe unter dem <a href="https://vsebs.de" target="_blank">VSE e.V.</a></small>
         </HeLimiter>

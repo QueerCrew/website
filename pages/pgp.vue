@@ -1,7 +1,8 @@
 <template>
-    <section id="content" class="py-16">
+    <QcHero id="hero" title="Unser PGP Key"/>
+
+    <section id="content" class="relative z-10 py-16">
         <HeLimiter size="text">
-            <h1>Unser PGP Key</h1>
             <p>
                 Hier ist unser PGP Key für die Email Adresse <a href="mailto:info@queercrew.de">info@queercrew.de</a>.<br><br>
             </p>
@@ -23,10 +24,10 @@
                 </code>
             </p>
 
-            <small>oder</small>
+            <small class="py-2">oder</small>
 
             <p>
-                <IodButton :is="NuxtLink" to="/downloads/queercrew-pgp.asc" target="_blank" icon-left="key" download>PGP Key Herunterladen</IodButton>
+                <IodButton :is="NuxtLink" to="/downloads/queercrew-pgp.asc" target="_blank" color-preset="primary" icon-left="key" download>PGP Key Herunterladen</IodButton>
             </p>
         </HeLimiter>
     </section>

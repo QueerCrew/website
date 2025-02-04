@@ -1,10 +1,9 @@
 <template>
-    <section id="content" class="py-16">
+    <QcHero id="hero" title="Datenschutz&shy;erklärung"/>
+
+    <section id="content" class="relative z-10 py-16">
         <HeLimiter size="text">
-            <h1>Datenschutz&shy;erklärung</h1>
-
-
-            <h2>Allgemein</h2>
+            <h2 class="mt-0">Allgemein</h2>
             <p>
                 Als Betreiber dieser Webseite kommen wir mit Ihren personenbezogenen Daten in Kontakt.
                 Gemeint sind alle Daten, die etwas über Sie aussagen und mit denen Sie identifiziert werden können. In dieser
