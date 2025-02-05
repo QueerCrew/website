@@ -3,9 +3,9 @@
 
     <section id="cta" class="relative z-10">
         <HeLimiter size="text">
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-4">
                 <QcEventHighlight title="Unser nächstes Event" :event="nextQCEvent" />
-                <IodButton :is="NuxtLink" to="/events" variant="contained" color-preset="primary" icon-right="east">Alle Events</IodButton>
+                <IodButton :is="NuxtLink" to="/events" label="Alle Events" normal-case variant="filled" color-preset="primary" icon-right="chevron_right" />
             </div>
         </HeLimiter>
     </section>
