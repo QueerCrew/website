@@ -11,7 +11,7 @@
                 </small>
                 <small>{{ event.location }}</small>
             </div>
-            <div class="flex flex-col p-4 border-t" v-if="event.description" v-html="event.description"></div>
+            <div class="p-4 border-t" v-if="event.description" v-html="event.description"></div>
             <div class="flex flex-col p-4 border-t" v-if="event.icsFile">
                 <IodButton :is="NuxtLink" to="/downloads/qc-irl-events.ics" target="_blank" color-preset="primary" icon-right="event">In Kalendar eintragen</IodButton>
             </div>
