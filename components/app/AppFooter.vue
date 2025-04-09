@@ -33,6 +33,9 @@
                         <NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
                     </li>
                     <li>
+                        <a href="#" @click.prevent="cookieBanner.open()">Cookie Einstellungen</a>
+                    </li>
+                    <li>
                         <NuxtLink to="/lizenzen">Lizenzen & Bildnachweise</NuxtLink>
                     </li>
                     <li>
@@ -48,7 +51,13 @@
             <small>Die QueerCrew ist eine Jugendgruppe unter dem <a href="https://vsebs.de" target="_blank">VSE e.V.</a></small>
         </HeLimiter>
     </footer>
+
+    <AppCookieBanner ref="cookieBanner" />
 </template>
+
+<script lang="ts" setup>
+    const cookieBanner = ref()
+</script>
 
 <style lang="sass" scoped>
     footer

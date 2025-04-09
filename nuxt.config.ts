@@ -16,6 +16,13 @@ export default defineNuxtConfig({
         plugins: ['relativeTime', 'isSameOrAfter', 'timezone', 'customParseFormat'],
     },
 
+    runtimeConfig: {
+        public: {
+            posthogPublicKey: 'phc_unPeff0pYKgFvx0XUupfzQoei69fxE7SpgL7fcpfQC1',
+            posthogHost: 'https://us.i.posthog.com'
+        }
+    },
+
     compatibilityDate: '2024-11-01',
 
     devtools: {

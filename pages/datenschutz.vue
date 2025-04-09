@@ -198,30 +198,43 @@
                 Unsere Website liegt auf einem Server des folgenden Anbieters für Internetdienste (Hosters):
             </p>
             <p>
-                ALL-INKL.COM - Neue Medien Münnich<br />
-                Inh. René Münnich<br />
-                Hauptstraße 68<br />
-                02742 Friedersdorf
+                DigitalOcean, LLC.<br />
+                101 6th Ave<br />
+                New York, NY 10013
             </p>
-            <h4>Wurde ein Vertrag über Auftragsverarbeitung mit dem Hoster geschlossen oder werden Standardvertragsklauseln (SCC) eingesetzt?</h4>
+            <h4>
+                Wurde ein Vertrag über Auftragsverarbeitung mit dem Hoster geschlossen oder werden Standardvertragsklauseln (SCC) eingesetzt?
+            </h4>
             <p>Ja</p>
+            <h4>
+                Wie verarbeiten wir Ihre Daten?
+            </h4>
+            <p>
+                Der Hoster speichert alle Daten unserer Webseite. Dazu gehören auch alle personenbezogenen Daten, die automatisch oder durch Ihre Eingabe erfasst werden. Das können insbesondere sein: Ihre IP-Adresse, aufgerufene Seiten, Namen, Kontaktdaten und -anfragen sowie Meta- und Kommunikationsdaten. Bei der Datenverarbeitung hält sich unser Hoster an unsere Weisungen und verarbeitet die Daten stets nur insoweit, als dies erforderlich ist, um die Leistungspflicht uns gegenüber zu erfüllen.
+            </p>
+            <h4>
+                Auf welcher Rechtsgrundlage verarbeiten wir Ihre Daten?
+            </h4>
+            <p>
+                Da wir über unsere Webseite potenzielle Kunden ansprechen und Kontakte zu bestehenden Kunden pflegen, dient die Datenverarbeitung durch unseren Hoster der Vertragsanbahnung und -erfüllung und beruht daher auf Art. 6 Abs. 1 lit. b) DSGVO. Darüber hinaus ist es unser berechtigtes Interesse als Unternehmen, ein professionelles Internetangebot bereitzustellen, das die nötigen Anforderungen an Sicherheit, Geschwindigkeit und Effizienz erfüllt. Insoweit verarbeiten wir Ihre Daten außerdem auf der Grundlage von Art. 6 Abs. 1 lit. f) DSGVO.
+            </p>
+
+
+            <h2>Analyse-Tools und Werbung</h2>
+            <p>Wir nutzen die folgenden Tools, um das Verhalten unserer Webseitenbesucher zu analysieren und Ihnen Werbung zu zeigen.</p>
+            <h3>PostHog</h3>
+            <h4>Was ist PostHog?</h4>
+            <p>Tool zur Analyse des Nutzerverhaltens</p>
+            <h4>Wer verarbeitet Ihre Daten?</h4>
+            <p>PostHog, Inc., 2261 Market Street #4008, San Francisco, CA 94114, USA</p>
+            <h4>Wurde ein Vertrag über Auftragsverarbeitung mit PostHog, Inc. geschlossen?</h4>
+            <p>Ja</p>
+            <h4>Wo finden Sie weitere Informationen über den Datenschutz bei PostHog?</h4>
+            <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://posthog.com/privacy">https://posthog.com/privacy</a></p>
             <h4>Wie verarbeiten wir Ihre Daten?</h4>
-            <p>
-                Der Hoster speichert alle Daten unserer Webseite. Dazu gehören auch alle personenbezogenen Daten, die
-                automatisch oder durch Ihre Eingabe erfasst werden. Das können insbesondere sein: Ihre IP-Adresse,
-                aufgerufene Seiten, Namen, Kontaktdaten und -anfragen sowie Meta- und Kommunikationsdaten. Bei der
-                Datenverarbeitung hält sich unser Hoster an unsere Weisungen und verarbeitet die Daten stets nur insoweit,
-                als dies erforderlich ist, um die Leistungspflicht uns gegenüber zu erfüllen.
-            </p>
+            <p>Wir sind stets daran interessiert, unser Webangebot für die Nutzer zu optimieren und Werbung optimal zu platzieren. Dabei hilft uns PostHog, ein Tool, welches das Verhalten der Nutzer analysiert und uns so die nötige Datenbasis für Anpassungen liefert. Das Besondere an PostHog ist, dass es Analyse- und Optimierungs-Cookies nur dann einsetzt, wenn Sie dem vorher zugestimmt haben. In diesem Fall führt das Tool eine statistische Reichweiten-Analyse unserer Webseite und eine Erfolgsmessung unserer Online-Marketing-Maßnahmen durch. Zudem ermöglicht es Testverfahren, um z. B. unterschiedliche Versionen unseres Online-Angebotes oder seiner Bestandteile zu testen und zu optimieren. Die Cookies von PostHog enthalten keine Informationen, über die Sie identifiziert werden können, und wenn doch, werden diese frühestmöglich anonymisiert oder pseudonymisiert.</p>
             <h4>Auf welcher Rechtsgrundlage verarbeiten wir Ihre Daten?</h4>
-            <p>
-                Da wir über unsere Webseite potenzielle Kunden ansprechen und Kontakte zu bestehenden Kunden pflegen, dient
-                die Datenverarbeitung durch unseren Hoster der Vertragsanbahnung und -erfüllung und beruht daher auf Art. 6
-                Abs. 1 lit. b) DSGVO. Darüber hinaus ist es unser berechtigtes Interesse, ein
-                professionelles Internetangebot bereitzustellen, das die nötigen Anforderungen an Sicherheit,
-                Geschwindigkeit und Effizienz erfüllt. Insoweit verarbeiten wir Ihre Daten außerdem auf der Grundlage von
-                Art. 6 Abs. 1 lit. f) DSGVO.
-            </p>
+            <p>Als Webseitenbetreiber haben wir ein berechtigtes Interesse an der anonymisierten Analyse des Nutzerverhaltens zu dem Zweck, unser Webangebot und die dort platzierte Werbung zu optimieren. Die Datenverarbeitung ist deshalb nach Art. 6 Abs. 1 lit. f) DSGVO rechtmäßig. Für den Fall, dass Sie z. B. der Speicherung von Cookies zugestimmt oder auf sonstige Weise in die Datenverarbeitung durch PostHog, Inc. eingewilligt haben, ist ausschließlich Art. 6 Abs. 1 lit. a) DSGVO die Rechtsgrundlage. Sie können die Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>
 
 
             <h2>Datenerfassung auf dieser Website</h2>
