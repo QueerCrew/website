@@ -10,7 +10,7 @@
                     <span class="leading" v-show="timeToNextEvent.days <= 9">0</span>
                     <span class="count">{{ timeToNextEvent.days }}</span>
                 </div>
-                <span class="label">Tage</span>
+                <span class="label">{{$t('time.days')}}</span>
             </div>
     
             <div class="counter-part">
@@ -18,7 +18,7 @@
                     <span class="leading" v-show="timeToNextEvent.hours <= 9">0</span>
                     <span class="count">{{ timeToNextEvent.hours }}</span>
                 </div>
-                <span class="label">Stunden</span>
+                <span class="label">{{$t('time.hours')}}</span>
             </div>
     
             <div class="counter-part">
@@ -26,7 +26,7 @@
                     <span class="leading" v-show="timeToNextEvent.minutes <= 9">0</span>
                     <span class="count">{{ timeToNextEvent.minutes }}</span>
                 </div>
-                <span class="label">Minuten</span>
+                <span class="label">{{$t('time.minutes')}}</span>
             </div>
     
             <div class="counter-part">
@@ -34,7 +34,7 @@
                     <span class="leading" v-show="timeToNextEvent.seconds <= 9">0</span>
                     <span class="count">{{ timeToNextEvent.seconds }}</span>
                 </div>
-                <span class="label">Sekunden</span>
+                <span class="label">{{$t('time.seconds')}}</span>
             </div>
         </div>
     </div>

@@ -1,43 +1,41 @@
 <template>
-    <QcHero id="hero" class="mb-[-3rem] pb-[2rem]" title="QueerCrew" subtitle="Deine queere Jugendgruppe in&nbsp;Braunschweig"/>
+    <QcHero id="hero" class="mb-[-3rem] pb-[2rem]" :title="$t('home.hero.title')" :subtitle="$t('home.hero.subtitle')"/>
 
     <section id="cta" class="relative z-10">
         <HeLimiter size="text">
             <div class="flex flex-col gap-4">
-                <QcEventHighlight title="Unser nächstes Event" :event="nextQCEvent" />
-                <IodButton :is="NuxtLink" to="/events" label="Alle Events" normal-case variant="filled" color-preset="primary" icon-right="chevron_right" />
+                <QcEventHighlight :title="$t('home.event.upcoming')" :event="nextQCEvent" />
+                <IodButton :is="NuxtLink" to="/events" :label="$t('home.event.all-label')" normal-case variant="filled" color-preset="primary" icon-right="chevron_right" />
             </div>
         </HeLimiter>
     </section>
 
     <section id="content" class="py-16">
         <HeLimiter size="text">
-            <h2 class="mt-0">Über den QC</h2>
-            <p>
-                Die QueerCrew ist eine Gruppe für junge queere Menschen bis 27.
-                Bei uns findest du eine diverse Community, die dich mit offenen Armen empfängt.
-            </p>
-            <p>
-                Wir bieten dir eine entspannte Gruppe mit verschiedenen Events wie Movie Nights,
-                Koch- und Backabende, Gamematches oder einfach lockeren Gesprächen.
-                Oder beteilige dich aktiv bei der Planung unserer Special Events.
-                Bei uns bist du immer herzlich willkommen.
-            </p>
-            <h3 class="pt-4">Wann kann man uns treffen?</h3>
-            <p>
-                An jedem <b>2. und 4. Dienstag im Monat</b> treffen wir uns zwischen <b>18 und 22 Uhr</b> im
-                <a href="https://maps.app.goo.gl/HmucHLjP1mQ2LpFX7" target="_blank" rel="noreferrer noopener">Onkel&nbsp;Emma</a>. 
-                Gerne laden wir dich ein, uns dort zu besuchen – ganz ungezwungen, wann immer es dir passt und ohne Anmeldung.
-            </p>
-            <h3 class="pt-4">Vorher einmal reinschnuppern</h3>
-            <p>
-                Du bist dir noch unsicher, ob die QueerCrew das Richtige für dich ist?
-                Tritt einfach unserem <a href="https://discord.gg/queercrew" target="_blank">Discord-Server</a> bei und lerne uns schon vorher kennen.
-            </p>
-            
-            <p>
-                Wir freuen uns auf dich!
-            </p>
+            <h2 class="mt-0">{{ $t('home.about-the-qc') }}</h2>
+            <p>{{ $t('home.about-the-qc-text-1') }}</p>
+            <p>{{ $t('home.about-the-qc-text-2') }}</p>
+
+            <h3 class="pt-4">{{ $t('home.when-qc') }}</h3>
+            <i18n-t keypath="home.when-qc-text" tag="p">
+                <template #day>
+                    <b>{{ $t('home.when-qc-text-day') }}</b>
+                </template>
+                <template #time>
+                    <b>{{ $t('home.when-qc-text-time') }}</b>
+                </template>
+                <template #place>
+                    <a class="whitespace-nowrap" href="https://maps.app.goo.gl/HmucHLjP1mQ2LpFX7" target="_blank" rel="noreferrer noopener">{{ $t('home.when-qc-text-place') }}</a>
+                </template>
+            </i18n-t>
+
+            <h3 class="pt-4">{{ $t('home.visit-qc') }}</h3>
+            <i18n-t keypath="home.visit-qc-text-1" tag="p">
+                <template #link>
+                    <a href="https://discord.gg/queercrew" target="_blank">{{ $t('home.visit-qc-text-1-link') }}</a>
+                </template>
+            </i18n-t>
+            <p>{{ $t('home.visit-qc-text-2') }}</p>
         </HeLimiter>
     </section>
 </template>

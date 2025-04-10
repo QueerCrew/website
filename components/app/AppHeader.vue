@@ -2,13 +2,14 @@
     <header>
         <HeLimiter>
             <NuxtLink to="/">
-                <img class="block h-8" src="/images/logo_white.svg" alt="QueerCrew Logo" height="40" />
+                <img class="block h-8" src="/images/logo_white.svg" :alt="$t('header.logo-alt')" height="40" />
             </NuxtLink>
             <HeSpacer />
             <HeMenu :menu="menu" />
+            <AppLanguageDropdown />
             <div class="social-media-wrapper">
-                <IodIconButton class="social-media-button" icon="" variant="contained" :is="NuxtLink" target="_blank" aria-label="Instagram" href="https://www.instagram.com/queercrew.de/" />
-                <IodIconButton class="social-media-button" icon="" variant="contained" :is="NuxtLink" target="_blank" aria-label="Discord" href="https://discord.gg/XENtaUHyVa" />
+                <IodIconButton class="header-button" icon="" variant="contained" :is="NuxtLink" target="_blank" :aria-label="$t('socials.instagram')" v-tooltip="$t('socials.instagram')" href="https://www.instagram.com/queercrew.de/" />
+                <IodIconButton class="header-button" icon="" variant="contained" :is="NuxtLink" target="_blank" :aria-label="$t('socials.discord')" v-tooltip="$t('socials.discord')" href="https://discord.gg/XENtaUHyVa" />
             </div>
         </HeLimiter>
         <div class="gay-glow">
@@ -25,11 +26,12 @@
 </template>
 
 <script lang="ts" setup>
+    const { t } = useI18n()
     const NuxtLink = defineNuxtLink({})
 
-    const menu = ref([
-        { id: 'startseite', label: 'Startseite', href: '/', children: [] },
-        { id: 'events', label: 'Unsere Events', href: '/events', children: [] },
+    const menu = computed(() => [
+        { id: 'startseite', label: t('menu.home'), href: '/', children: [] },
+        { id: 'events', label: t('menu.events'), href: '/events', children: [] },
     ])
 </script>
 
@@ -58,9 +60,11 @@
             align-items: center
             gap: .5rem
 
-            .social-media-button
-                --local-color-background: var(--color-text-soft)
+            > .header-button
                 --local-font: var(--font-brand)
+
+        .header-button
+            --local-color-background: var(--color-text-soft)
 
         .gay-glow
             position: absolute
