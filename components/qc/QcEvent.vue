@@ -39,6 +39,11 @@
         background-blend-mode: screen
         border-radius: .5rem
         overflow: hidden
+        text-decoration: none
+        transition: all 100ms
+
+        &:hover
+            box-shadow: var(--shadow-m)
 
         .image
             display: block

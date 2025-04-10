@@ -2,44 +2,43 @@
     <Transition name="slide">
         <div ref="cookieBanner" id="cookie-banner" class="small-scrollbar" v-show="isOpen">
             <div class="page" v-if="page === 'overview'">
-                <h4 class="px-2 m-0 text-lg">Wir verwenden Cookies!</h4>
-                <span class="px-2">
-                    Diese Seite nutzt Website Tracking-Technologien von Dritten, um ihre Dienste anzubieten, stetig zu verbessern.
-                    Ich bin damit einverstanden und kann meine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen oder ändern.
-                </span>
+                <h4 class="px-2 m-0 text-lg">{{ $t('cookie-banner.overview-title') }}</h4>
+                <span class="px-2">{{ $t('cookie-banner.overview-description') }}</span>
                 <div class="flex flex-col gap-4 my-2">
-                    <IodButton type="button" corner="l" size="m" color-preset="primary" variant="contained" label="Optionale ablehnen" @click="denyAll"/>
-                    <IodButton type="button" corner="l" size="l" color-preset="primary" variant="filled" label="Alle akzeptieren" @click="acceptAll"/>
+                    <IodButton type="button" corner="l" size="m" color-preset="primary" variant="contained" :label="$t('cookie-banner.deny-all')" @click="denyAll"/>
+                    <IodButton type="button" corner="l" size="l" color-preset="primary" variant="filled" :label="$t('cookie-banner.accept-all')" @click="acceptAll"/>
                 </div>
-                <span class="flex flex-wrap items-center gap-2 px-2">
-                    <a href="#" @click.prevent="setPage('settings')">Mehr erfahren</a>
+                <small class="flex flex-wrap items-center gap-2 px-2">
+                    <a href="#" @click.prevent="setPage('settings')">{{ $t('cookie-banner.to-settings') }}</a>
                     <span>·</span>
-                    <NuxtLink to="/impressum">Impressum</NuxtLink>
+                    <NuxtLink :to="localePath('/legal-notice')">{{ $t('cookie-banner.legal-notice') }}</NuxtLink>
                     <span>·</span>
-                    <NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
-                </span>
+                    <NuxtLink :to="localePath('/privacy-policy')">{{ $t('cookie-banner.privacy-policy') }}</NuxtLink>
+                </small>
             </div>
 
             <div class="page" v-if="page === 'settings'">
-                <h4 class="px-2 m-0 text-lg">Cookie Info</h4>
+                <h4 class="px-2 m-0 text-lg">{{ $t('cookie-banner.settings-title') }}</h4>
+                <hr>
                 <span class="px-2" v-for="service in services">
-                    {{ service.name }} ({{ service.type }} Cookie)<br>
-                    <a v-if="service.privacyPolicy" target="_blank" :href="service.privacyPolicy">Datenschutzerklärung</a>
+                    {{ $t('cookie-banner.settings-entry-title', {name: service.name, type: $t('cookie-banner.cookie-type.'+service.type)}) }}<br>
+                    <a v-if="service.privacyPolicy" target="_blank" :href="service.privacyPolicy">{{ $t('cookie-banner.privacy-policy-long') }}</a>
                 </span>
-                <!-- <IodButton type="button" corner="l" size="m" color-preset="primary" variant="filled" label="Auswahl akzeptieren" @click="acceptAll"/> -->
-                <span class="flex flex-wrap items-center gap-2 px-2">
-                    <a href="#" @click.prevent="setPage('overview')">Zur Übersicht</a>
+                <hr>
+                <small class="flex flex-wrap items-center gap-2 px-2">
+                    <a href="#" @click.prevent="setPage('overview')">{{ $t('cookie-banner.to-overview') }}</a>
                     <span>·</span>
-                    <NuxtLink to="/impressum">Impressum</NuxtLink>
+                    <NuxtLink :to="localePath('/legal-notice')">{{ $t('cookie-banner.legal-notice') }}</NuxtLink>
                     <span>·</span>
-                    <NuxtLink to="/datenschutz">Datenschutz</NuxtLink>
-                </span>
+                    <NuxtLink :to="localePath('/privacy-policy')">{{ $t('cookie-banner.privacy-policy') }}</NuxtLink>
+                </small>
             </div>
         </div>
     </Transition>
 </template>
 
 <script lang="ts" setup>
+    const localePath = useLocalePath()
     const cookieBanner = ref()
     const services = useCookieServices()
 
@@ -114,7 +113,7 @@
         overflow-y: scroll
         background: rgba(34, 34, 34, 0.85)
         backdrop-filter: blur(20px)
-        border: 1px solid black
+        border: 1px solid var(--color-border-focused)
         box-shadow: var(--shadow-s)
 
         &::after
@@ -128,7 +127,7 @@
             background-size: 100%
             background-repeat: no-repeat
             z-index: 0
-            opacity: .03
+            opacity: .2
             pointer-events: none
 
         .page
@@ -140,9 +139,6 @@
             padding: 1.5rem 1rem
             line-height: 1.5
 
-            a
-                color: var(--color-text)
-
-            a:hover
-                text-decoration: underline
+            hr
+                border-color: var(--color-border-focused)
 </style>

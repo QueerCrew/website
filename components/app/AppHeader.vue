@@ -1,37 +1,23 @@
 <template>
     <header>
-        <HeLimiter>
-            <NuxtLink to="/">
-                <img class="block h-8" src="/images/logo_white.svg" :alt="$t('header.logo-alt')" height="40" />
-            </NuxtLink>
-            <HeSpacer />
-            <HeMenu :menu="menu" />
-            <AppLanguageDropdown />
-            <div class="social-media-wrapper">
-                <IodIconButton class="header-button" icon="" variant="contained" :is="NuxtLink" target="_blank" :aria-label="$t('socials.instagram')" v-tooltip="$t('socials.instagram')" href="https://www.instagram.com/queercrew.de/" />
-                <IodIconButton class="header-button" icon="" variant="contained" :is="NuxtLink" target="_blank" :aria-label="$t('socials.discord')" v-tooltip="$t('socials.discord')" href="https://discord.gg/XENtaUHyVa" />
-            </div>
+        <HeLimiter class="layout">
+            <NuxtLink class="logo" :to="localePath('/')" :aria-label="$t('header.menu.home')"/>
+            <HeMenu class="menu" :menu="menu" />
+            <QcSocials class="socials"/>
+            <AppLanguageDropdown class="language"/>
         </HeLimiter>
-        <div class="gay-glow">
-            <div class="gay-glow-inner">
-                <div class="glow-item"></div>
-                <div class="glow-item"></div>
-                <div class="glow-item"></div>
-                <div class="glow-item"></div>
-                <div class="glow-item"></div>
-                <div class="glow-item"></div>
-            </div>
-        </div>
+        <QcGayGlow />
     </header>
 </template>
 
 <script lang="ts" setup>
     const { t } = useI18n()
+    const localePath = useLocalePath()
     const NuxtLink = defineNuxtLink({})
 
     const menu = computed(() => [
-        { id: 'startseite', label: t('menu.home'), href: '/', children: [] },
-        { id: 'events', label: t('menu.events'), href: '/events', children: [] },
+        { id: 'startseite', label: t('header.menu.home'), href: localePath('/'), children: [] },
+        { id: 'events', label: t('header.menu.events'), href: localePath('/events'), children: [] },
     ])
 </script>
 
@@ -49,67 +35,42 @@
         z-index: 1000
         backdrop-filter: blur(10px) saturate(0%)
 
-        .he-limiter
-            height: 100%
-            display: flex !important
-            align-items: center
-            gap: .5rem
-
-        .social-media-wrapper
-            display: flex
-            align-items: center
-            gap: .5rem
-
-            > .header-button
-                --local-font: var(--font-brand)
-
-        .header-button
-            --local-color-background: var(--color-text-soft)
-
-        .gay-glow
+        .qc-gay-glow
             position: absolute
             top: 100%
             left: 0
             right: 0
-            display: flex
-            align-items: stretch
             height: 3rem
-            overflow: hidden
-            pointer-events: none
 
-            .gay-glow-inner
-                flex: 1
-                filter: blur(20px)
+        .layout
+            height: 100%
+            display: grid !important
+            align-items: center
+            gap: .5rem
+            grid-template-columns: auto 1fr auto auto auto
+            grid-template-areas: "logo spacer menu socials language"
+
+            .logo
+                grid-area: logo
                 display: flex
-                align-items: stretch
-                transform: translateY(-100%) scaleX(1.1)
+                height: 3rem
+                width: 3rem
+                background-image: url('/images/logo_white.svg')
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                border-radius: var(--radius-m)
 
-            .glow-item
-                flex: 1
+            .menu
+                grid-area: menu
 
-                &:nth-child(1)
-                    background: var(--color-pride-red)
+            .socials
+                grid-area: socials
 
-                &:nth-child(2)
-                    background: var(--color-pride-orange)
-
-                &:nth-child(3)
-                    background: var(--color-pride-yellow)
-
-                &:nth-child(4)
-                    background: var(--color-pride-green)
-
-                &:nth-child(5)
-                    background: var(--color-pride-blue)
-
-                &:nth-child(6)
-                    background: var(--color-pride-purple)
+            .language
+                grid-area: language
     
     @media only screen and (max-width: 1023px)
-        header
-            .he-menu
-                order: 2
-
-            .social-media-wrapper
-                order: 1
+        header .layout
+            grid-template-areas: "logo spacer socials language menu"
 </style>

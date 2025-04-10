@@ -1,48 +1,62 @@
 export default {
-    "time": {
+    "general": {
         "seconds": "Sekunden",
         "minutes": "Minuten",
         "hours": "Stunden",
         "days": "Tage",
         "months": "Monate",
         "years": "Jahre",
-    },
-    "date": {
-        "day": "Tag",
-        "month": "Monat",
-        "year": "Jahr",
-        "date": "Datum",
-        "time": "Uhrzeit",
-    },
-    "menu": {
-        "home": "Startseite",
-        "events": "Unsere Events",
-
-    },
-    "socials": {
         "instagram": "Instagram",
         "discord": "Discord",
         "tiktok": "TikTok",
     },
     "header": {
-        "logo-alt": "QueerCrew Logo",
+        "menu": {
+            "home": "Startseite",
+            "events": "Unsere Events",
+        },
     },
     "footer": {
-        "section-qc-title": "QueerCrew",
-        "section-qc-item-1": "Deine queere Jugendgruppe in Braunschweig",
-        "section-socials-title": "QC auf Social Media",
-        "section-socials-item-1": "Instagram",
-        "section-socials-item-2": "Discord",
-        "section-legal-title": "Rechtliches",
-        "section-legal-item-1": "Impressum",
-        "section-legal-item-2": "Datenschutz",
-        "section-legal-item-3": "Cookie Einstellungen",
-        "section-legal-item-4": "Lizenzen & Bildnachweise",
-        "section-legal-item-5": "PGP Key",
+        "qc-title": "QueerCrew",
+        "qc-subtitle": "Deine queere Jugendgruppe in Braunschweig",
+        "socials-title": "QC auf Social Media",
+        "legal-title": "Rechtliches",
         "disclaimer": "Die QueerCrew ist eine Jugendgruppe unter dem {link}",
-        "disclaimer-link": "VSE e.V.",
+        "menu": {
+            "legal-notice": "Impressum",
+            "privacy-policy": "Datenschutz",
+            "cookie-settings": "Cookie Einstellungen",
+            "licenses": "Lizenzen & Bildnachweise",
+            "pgp-key": "PGP Key",
+        },
     },
-    "home": {
+    "cookie-banner": {
+        "overview-title": "Wir verwenden Cookies",
+        "overview-description": `
+            Diese Seite nutzt Website Tracking-Technologien von Dritten, um ihre Dienste anzubieten, stetig zu verbessern.
+            Ich bin damit einverstanden und kann meine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen oder ändern.
+        `,
+        "settings-title": "Cookie Info",
+        "settings-entry-title": "{name} ({type})",
+        "cookie-type": {
+            "functional": "Funktional",
+            "analytics": "Analyse",
+            "marketing": "Marketing",
+        },
+        "legal-notice": "Impressum",
+        "privacy-policy": "Datenschutz",
+        "privacy-policy-long": "Datenschutzerklärung",
+        "to-settings": "Mehr erfahren",
+        "to-overview": "Zur Übersicht",
+        "deny-all": "Optionale ablehnen",
+        "accept-all": "Alle akzeptieren",
+    },
+
+    "page-home": {
+        "seo": {
+            "title": "Deine queere Jugendgruppe in Braunschweig",
+            "description": "Die QueerCrew ist eine Gruppe für junge queere Menschen bis 27. Bei uns findest du eine diverse Community, die dich mit offenen Armen empfängt.",
+        },
         "hero": {
             "title": "QueerCrew",
             "subtitle": "Deine queere Jugendgruppe in&nbsp;Braunschweig",
@@ -71,11 +85,11 @@ export default {
         "when-qc-text-time": "18 und 22 Uhr",
         "when-qc-text-place": "Onkel Emma",
         "visit-qc": "Vorher einmal reinschnuppern",
-        "visit-qc-text-1": `
+        "visit-qc-text": `
             Du bist dir noch unsicher, ob die QueerCrew das Richtige für dich ist?
             Tritt einfach unserem {link} bei und lerne uns schon vorher kennen.
+            Wir freuen uns auf dich!
         `,
-        "visit-qc-text-1-link": "Discord-Server",
-        "visit-qc-text-2": "Wir freuen uns auf dich!",
+        "visit-qc-text-link": "Discord Server",
     }
 }

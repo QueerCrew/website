@@ -192,7 +192,7 @@
                     text-align: center
 
                     &.router-link-active
-                        color: var(--color-primary) !important
+                        color: var(--color-text) !important
 
                     .notification
                         position: absolute

@@ -2,44 +2,44 @@
     <footer>
         <HeLimiter class="top-row !flex gap-8">
             <div class="flex-1 flex flex-col gap-2">
-                <h3>{{ $t('footer.section-qc-title') }}</h3>
+                <h3>{{ $t('footer.qc-title') }}</h3>
                 <hr>
                 <ul>
                     <li>
-                        <span>{{ $t('footer.section-qc-item-1') }}</span>
+                        <span>{{ $t('footer.qc-subtitle') }}</span>
                     </li>
                 </ul>
             </div>
             <div class="flex-1 flex flex-col gap-2">
-                <h3>{{ $t('footer.section-socials-title') }}</h3>
+                <h3>{{ $t('footer.socials-title') }}</h3>
                 <hr>
                 <ul>
                     <li>
-                        <a href="https://discord.gg/XENtaUHyVa" target="_blank" rel="noopener noreferrer">{{ $t('footer.section-socials-item-2') }}</a>
+                        <a href="https://discord.gg/queercrew" target="_blank" rel="noopener noreferrer">{{ $t('general.discord') }}</a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/queercrew.de/" target="_blank" rel="noopener noreferrer">{{ $t('footer.section-socials-item-1') }}</a>
+                        <a href="https://www.instagram.com/queercrew.de/" target="_blank" rel="noopener noreferrer">{{ $t('general.instagram') }}</a>
                     </li>
                 </ul>
             </div>
             <div class="flex-1 flex flex-col gap-2">
-                <h3>{{ $t('footer.section-legal-title') }}</h3>
+                <h3>{{ $t('footer.legal-title') }}</h3>
                 <hr>
                 <ul>
                     <li>
-                        <NuxtLink to="/impressum">{{ $t('footer.section-legal-item-1') }}</NuxtLink>
+                        <NuxtLink :to="localePath('/legal-notice')">{{ $t('footer.menu.legal-notice') }}</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/datenschutz">{{ $t('footer.section-legal-item-2') }}</NuxtLink>
+                        <NuxtLink :to="localePath('/privacy-policy')">{{ $t('footer.menu.privacy-policy') }}</NuxtLink>
                     </li>
                     <li>
-                        <a href="#" @click.prevent="cookieBanner.open()">{{ $t('footer.section-legal-item-3') }}</a>
+                        <a href="#" @click.prevent="cookieBanner.open()">{{ $t('footer.menu.cookie-settings') }}</a>
                     </li>
                     <li>
-                        <NuxtLink to="/lizenzen">{{ $t('footer.section-legal-item-4') }}</NuxtLink>
+                        <NuxtLink :to="localePath('/licenses')">{{ $t('footer.menu.licenses') }}</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/pgp">{{ $t('footer.section-legal-item-5') }}</NuxtLink>
+                        <NuxtLink :to="localePath('/pgp')">{{ $t('footer.menu.pgp-key') }}</NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -50,12 +50,12 @@
             <small class="hide">•</small>
             <i18n-t keypath="footer.disclaimer" tag="small">
                 <template #link>
-                    <a href="https://vsebs.de" target="_blank">{{ $t('footer.disclaimer-link') }}</a>
+                    <a href="https://vsebs.de" target="_blank">VSE e.V.</a>
                 </template>
             </i18n-t>
             <HeSpacer class="spacer"/>
             <div class="mr-auto">
-                <AppLanguageDropdown />
+                <AppLanguageDropdown with-name/>
             </div>
         </HeLimiter>
     </footer>
@@ -64,6 +64,7 @@
 </template>
 
 <script lang="ts" setup>
+    const localePath = useLocalePath()
     const cookieBanner = ref()
 </script>
 
@@ -76,6 +77,9 @@
             display: flex
             padding-block: 4rem
             gap: 2rem
+
+            a
+                text-decoration: none
 
         .copyright-row
             display: flex !important

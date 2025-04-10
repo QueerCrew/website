@@ -18,23 +18,22 @@ export default defineNuxtConfig({
     },
 
     i18n: {
+        baseUrl: 'https://queercrew.de',
         locales: [
-            { code: 'de', iso: 'de-DE', name: 'Deutsch (DE)', file: 'de-DE.js' },
-            { code: 'en', iso: 'en-US', name: 'English (US)', file: 'en-US.js' },
+            { code: 'de-de', language: 'de-DE', icon: 'de', name: 'Deutsch (DE)', file: 'de-DE.js', isCatchallLocale: true, },
+            { code: 'en-us', language: 'en-US', icon: 'us', name: 'English (US)', file: 'en-US.js', },
         ],
-        compilation: {
-            strictMessage: false,
-        },
-        defaultLocale: 'de',
+        defaultLocale: 'de-de',
         lazy: true,
         langDir: './',
-        strategy: 'no_prefix',
+        strategy: 'prefix',
         detectBrowserLanguage: {
             useCookie: true,
-            cookieCrossOrigin: false,
+            cookieCrossOrigin: true,
+            cookieSecure: true,
             cookieKey: 'i18n_redirected',
-            alwaysRedirect: false,
-            fallbackLocale: 'de',
+            alwaysRedirect: true,
+            fallbackLocale: 'de-de',
         },
     },
 
