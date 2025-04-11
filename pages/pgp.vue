@@ -1,13 +1,13 @@
 <template>
-    <QcHero id="hero" title="Unser PGP Key"/>
+    <QcHero id="hero" :title="$t('page-pgp.hero.title')"/>
 
     <section id="content" class="relative z-10 py-16">
         <HeLimiter size="text">
             <p>
-                Hier ist unser PGP Key für die Email Adresse <a href="mailto:info@queercrew.de">info@queercrew.de</a>.<br><br>
+                {{ $t('page-pgp.description') }} <a href="mailto:info@queercrew.de">info@queercrew.de</a>.<br><br>
             </p>
             <p>
-                <code title="Klicken zum kopieren" id="pgp" @click="copyKey">
+                <code :title="$t('page-pgp.copy-hint')" id="pgp" @click="copyKey">
                     -----BEGIN PGP PUBLIC KEY BLOCK-----<br><br>
                     xjMEZtSKUxYJKwYBBAHaRw8BAQdA7taSgnE9VovTjQnkUKELfDRGHxpj+m6t<br>
                     0V9XRxBM5DPNJWluZm9AcXVlZXJjcmV3LmRlIDxpbmZvQHF1ZWVyY3Jldy5k<br>
@@ -24,10 +24,10 @@
                 </code>
             </p>
 
-            <small class="py-2">oder</small>
+            <small class="py-2">{{ $t('page-pgp.or') }}</small>
 
             <p>
-                <IodButton :is="NuxtLink" to="/downloads/queercrew-pgp.asc" target="_blank" color-preset="primary" icon-left="key" download>PGP Key Herunterladen</IodButton>
+                <IodButton :is="NuxtLink" to="/downloads/queercrew-pgp.asc" target="_blank" color-preset="primary" icon-left="key" download>{{ $t('page-pgp.download') }}</IodButton>
             </p>
         </HeLimiter>
     </section>
@@ -35,10 +35,11 @@
 
 <script lang="ts" setup>
     const NuxtLink = defineNuxtLink({})
+    const { t } = useI18n()
     
     useSeoMeta({
-        title: 'Unser PGP Key',
-        description: 'Unser PGP Key für die Verschlüsselung von E-Mails.',
+        title: t('page-pgp.seo.title'),
+        description: t('page-pgp.seo.description'),
     })
 
     function copyKey()
@@ -50,7 +51,7 @@
         navigator.clipboard.writeText(key ?? '')
 
         // Alert the user
-        alert('Der PGP Key wurde in die Zwischenablage kopiert')
+        alert(t('page-pgp.copy-alert'))
     }
 </script>
 

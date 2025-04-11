@@ -112,4 +112,18 @@ export default {
         "font-licenses": "Schriftlizenzen",
         "image-licenses": "Bildlizenzen",
     },
+    "page-pgp": {
+        "seo": {
+            "title": "Unser PGP Key",
+            "description": "Unser PGP Key für die Verschlüsselung von E-Mails.",
+        },
+        "hero": {
+            "title": "Unser PGP Key"
+        },
+        "description": "Hier ist unser PGP Key für die Email Adresse",
+        "copy-hint": "Klicken zum kopieren",
+        "copy-alert": "Der PGP Key wurde in die Zwischenablage kopiert",
+        "or": "oder",
+        "download": "PGP Key Herunterladen",
+    }
 }
