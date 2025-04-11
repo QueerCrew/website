@@ -1,5 +1,5 @@
 <template>
-    <QcHero id="hero" class="mb-[-3rem] pb-[2rem]" title="Unsere Events"/>
+    <QcHero id="hero" class="mb-[-3rem] pb-[2rem]" :title="$t('page-events.hero.title')"/>
 
     <section id="content" class="relative z-10 pb-16">
         <HeLimiter size="text">
@@ -14,11 +14,13 @@
     import dayjs from 'dayjs'
     import type { Event } from '~/types/event'
 
+    const { t } = useI18n()
+
     const NuxtLink = defineNuxtLink({})
 
     useSeoMeta({
-        title: 'Events',
-        description: 'Alle Events der QueerCrew in Braunschweig',
+        title: t('page-events.seo.title'),
+        description: t('page-events.seo.description'),
     })
 </script>
 

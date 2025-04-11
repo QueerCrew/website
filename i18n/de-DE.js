@@ -91,5 +91,14 @@ export default {
             Wir freuen uns auf dich!
         `,
         "visit-qc-text-link": "Discord Server",
+    },
+    "page-events": {
+        "seo": {
+            "title": "Unsere Events",
+            "description": "Alle unsere Events in Braunschweig",
+        },
+        "hero": {
+            "title": "Unsere Events"
+        }
     }
 }
