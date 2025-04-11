@@ -92,4 +92,13 @@ export default {
         `,
         "visit-qc-text-link": "Discord server",
     },
+    "page-events": {
+        "seo": {
+            "title": "Our Events",
+            "description": "All of our events in Brunswick.",
+        },
+        "hero": {
+            "title": "Our Events"
+        }
+    }
 }
