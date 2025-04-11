@@ -99,6 +99,17 @@ export default {
         },
         "hero": {
             "title": "Our Events"
-        }
-    }
+        },
+    },
+    "page-licenses": {
+        "seo": {
+            "title": "Licenses & Image Credits",
+            "description": "Licenses and image credits for the QueerCrew website.",
+        },
+        "hero": {
+            "title": "Licenses & Image Credits",
+        },
+        "font-licenses": "Font Licenses",
+        "image-licenses": "Image Licenses & Credits",
+    },
 }

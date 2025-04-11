@@ -100,5 +100,16 @@ export default {
         "hero": {
             "title": "Unsere Events"
         }
-    }
+    },
+    "page-licenses": {
+        "seo": {
+            "title": "Lizenzen & Bildnachweise",
+            "description": "Alle unsere Lizenzen und Bildnachweise",
+        },
+        "hero": {
+            "title": "Lizenzen & Bildnachweise",
+        },
+        "font-licenses": "Schriftlizenzen",
+        "image-licenses": "Bildlizenzen",
+    },
 }
