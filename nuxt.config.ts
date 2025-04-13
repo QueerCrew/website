@@ -1,12 +1,20 @@
+import tailwindcss from "@tailwindcss/vite"
+
 export default defineNuxtConfig({
     css: [
+        '~/assets/css/tailwind.css',
         '~/assets/css/app.sass',
     ],
+
+    vite: {
+        plugins: [
+            tailwindcss(),
+        ],
+    },
     
     modules: [
         'dayjs-nuxt',
         'floating-vue/nuxt',
-        '@nuxtjs/tailwindcss',
         '@nuxtjs/i18n',
     ],
 
