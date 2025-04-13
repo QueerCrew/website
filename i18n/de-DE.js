@@ -70,7 +70,7 @@ export default {
             Die QueerCrew ist eine Gruppe für junge queere Menschen bis 27.
             Bei uns findest du eine diverse Community, die dich mit offenen Armen empfängt.
         `,
-        "about-the-qc-text-1":`
+        "about-the-qc-text-2":`
             Wir bieten dir eine entspannte Gruppe mit verschiedenen Events wie Movie Nights,
             Koch- und Backabende, Gamematches oder einfach lockeren Gesprächen.
             Oder beteilige dich aktiv bei der Planung unserer Special Events.

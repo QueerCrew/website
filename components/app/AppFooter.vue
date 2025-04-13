@@ -48,7 +48,7 @@
         <HeLimiter class="copyright-row">
             <small>© {{ new Date().getFullYear() }} <a href="https://freuwoert.com" target="_blank">Alyx Freuwört</a></small>
             <small class="hide">•</small>
-            <i18n-t keypath="footer.disclaimer" tag="small">
+            <i18n-t keypath="footer.disclaimer" tag="small" scope="global">
                 <template #link>
                     <a href="https://vsebs.de" target="_blank">VSE e.V.</a>
                 </template>

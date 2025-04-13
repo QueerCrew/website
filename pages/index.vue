@@ -19,7 +19,7 @@
             <p>{{ $t('page-home.about-the-qc-text-2') }}</p>
 
             <h3 class="pt-4">{{ $t('page-home.when-qc') }}</h3>
-            <i18n-t keypath="page-home.when-qc-text" tag="p">
+            <i18n-t keypath="page-home.when-qc-text" tag="p" scope="global">
                 <template #day>
                     <b>{{ $t('page-home.when-qc-text-day') }}</b>
                 </template>
@@ -32,7 +32,7 @@
             </i18n-t>
 
             <h3 class="pt-4">{{ $t('page-home.visit-qc') }}</h3>
-            <i18n-t keypath="page-home.visit-qc-text" tag="p">
+            <i18n-t keypath="page-home.visit-qc-text" tag="p" scope="global">
                 <template #link>
                     <b><a href="https://discord.gg/queercrew" target="_blank">{{ $t('page-home.visit-qc-text-link') }}</a></b>
                 </template>
