@@ -21,7 +21,7 @@ export default [
         repeat: {
             generateAmount: 4,
             // @ts-ignore
-            generateFunction: () => dayjs().add(-1, 'day').recur().every('Tuesday').daysOfWeek().every([1]).except('2025-04-08').weeksOfMonthByDay(),
+            generateFunction: () => dayjs().add(-1, 'day').recur().every('Tuesday').daysOfWeek().every([1]).except('2025-06-10').weeksOfMonthByDay(),
         },
     },
     {
@@ -43,16 +43,17 @@ export default [
     {
         category: 'qc_irl',
         timezone: 'Europe/Berlin',
-        start: '2025-04-08 18:00',
-        end: '2025-04-08 22:00',
-        title: 'QC_IRL – PowerPoint Karaoke',
+        start: '2025-06-10 18:00',
+        end: '2025-06-10 22:00',
+        title: 'QC_IRL – Smoothie Party',
         description:
-            'Wir laden euch ein, beim kommenden QC_IRL am <b>Dienstag, den 08.04.</b> mit uns Powerpoint-Karaoke zu spielen! '+
-            'Lass dich überraschen, welche fremde Powerpoint-Präsentation du vorstellen könntest.<br><br>'+
+            '<b>Lasst uns gemeinsam den Sommer einläuten mit ein paar frischen Smoothies!</b><br><br>'+
+            'In gemütlicher Onkel-Emma-Atmosphäre habt ihr die Möglichkeit, '+
+            'unsere Rezepte auszuprobieren oder eigene Frucht-Kombinationen zusammenzustellen - natürlich vegan.<br><br>'+
             'Wir freuen uns auf euch!<br>' +
             'Euer QC Team ❤️',
         location: 'Onkel Emma, Echternstraße 9',
-        image: '/images/events/2025_04_08_powerpoint_karaoke.png',
+        image: '/images/events/2025_06_10_smoothie_party.png',
         icsFile: null,
     },
 ] as EventConfig[]
