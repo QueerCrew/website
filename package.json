@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^9.5.4",
+    "@nuxtjs/i18n": "^9.5.5",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "dayjs-nuxt": "^2.1.11",
     "dayjs-recur": "^1.0.1",
