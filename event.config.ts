@@ -21,7 +21,7 @@ export default [
         repeat: {
             generateAmount: 4,
             // @ts-ignore
-            generateFunction: () => dayjs().add(-1, 'day').recur().every('Tuesday').daysOfWeek().every([1]).except('2025-06-10').weeksOfMonthByDay(),
+            generateFunction: () => dayjs().add(-1, 'day').recur().every('Tuesday').daysOfWeek().every([1]).except('2025-07-08').weeksOfMonthByDay(),
         },
     },
     {
@@ -43,17 +43,17 @@ export default [
     {
         category: 'qc_irl',
         timezone: 'Europe/Berlin',
-        start: '2025-06-10 18:00',
-        end: '2025-06-10 22:00',
-        title: 'QC_IRL – Smoothie Party',
+        start: '2025-07-08 18:00',
+        end: '2025-07-08 22:00',
+        title: 'QC_IRL – Button Workshop',
         description:
-            '<b>Lasst uns gemeinsam den Sommer einläuten mit ein paar frischen Smoothies!</b><br><br>'+
-            'In gemütlicher Onkel-Emma-Atmosphäre habt ihr die Möglichkeit, '+
-            'unsere Rezepte auszuprobieren oder eigene Frucht-Kombinationen zusammenzustellen - natürlich vegan.<br><br>'+
+            '<b>Wir laden euch wieder zu einem unserer Special-Events ein!</b><br>'+
+            'Wie im letzten Jahr wollen wir am Dienstag, den 08.07.25, wieder Buttons herstellen und dann beim CSD verkaufen.<br>'+
+            'Also freut euch auf den Button-Workshop, mit selbstgemachter Pizza, sowie die gewohnten netten Gespräche.<br><br>'+
             'Wir freuen uns auf euch!<br>' +
             'Euer QC Team ❤️',
         location: 'Onkel Emma, Echternstraße 9',
-        image: '/images/events/2025_06_10_smoothie_party.png',
+        image: '/images/events/2025_07_08_button_workshop.png',
         icsFile: null,
     },
 ] as EventConfig[]
