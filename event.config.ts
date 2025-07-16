@@ -43,17 +43,21 @@ export default [
     {
         category: 'qc_irl',
         timezone: 'Europe/Berlin',
-        start: '2025-07-08 18:00',
-        end: '2025-07-08 22:00',
-        title: 'QC_IRL – Button Workshop',
+        start: '2025-08-09 12:00',
+        end: '2025-08-09 18:30',
+        title: 'Der QC auf dem CSD Braunschweig',
         description:
-            '<b>Wir laden euch wieder zu einem unserer Special-Events ein!</b><br>'+
-            'Wie im letzten Jahr wollen wir am Dienstag, den 08.07.25, wieder Buttons herstellen und dann beim CSD verkaufen.<br>'+
-            'Also freut euch auf den Button-Workshop, mit selbstgemachter Pizza, sowie die gewohnten netten Gespräche.<br><br>'+
+            '<b>Wir sind wieder auf dem CSD Braunschweig!</b><br>'+
+            'Wie letztes Jahr sind wir wieder auf dem CSD Braunschweig und haben cute Buttons für euch in Gepäck.<br>'+
+            'Für gerade einmal <b>1€</b> könnt ihr euch einen Button aus den 24 handgezeichneten Designs aussuchen.<br>'+
+            'Und für einen Euro mehr gibt\'s gleich 3 Buttons eurer Wahl!<br>'+
+            'Auch könnt ihr euch für 50ct wieder Buttons selbst gestalten.<br>'+
+            'Oben drauf gibt es für jeden Kauf kostenlos eine QC Button und QC Sticker dazu.<br><br>'+
+            '<b>Es lohnt sich also, bei uns vorbei zu kommen!</b><br><br>'+
             'Wir freuen uns auf euch!<br>' +
             'Euer QC Team ❤️',
-        location: 'Onkel Emma, Echternstraße 9',
-        image: '/images/events/2025_07_08_button_workshop.png',
+        location: 'Schlossplatz, neben dem VSE Stand',
+        image: '/images/events/2025_08_09_csd.png',
         icsFile: null,
     },
 ] as EventConfig[]

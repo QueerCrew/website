@@ -133,7 +133,7 @@
                             border-radius: 30rem
                             height: 1.35rem
                             font-size: .8rem
-                            background-color: var(--bg-rose-500)
+                            background-color: oklch(64.5% 0.246 16.439)
                             color: white
                             line-height: 1.35rem
                             padding-inline: .6rem
@@ -204,7 +204,7 @@
                         border-radius: 30rem
                         height: 1rem
                         font-size: .7rem
-                        background-color: var(--bg-rose-500)
+                        background-color: oklch(64.5% 0.246 16.439)
                         color: white
                         line-height: 1rem
                         padding-inline: .5rem

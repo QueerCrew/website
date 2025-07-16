@@ -13,6 +13,7 @@ export default {
     "header": {
         "menu": {
             "home": "Home",
+            "csd": "We at the CSD",
             "events": "Our Events",
         },
     },

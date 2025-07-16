@@ -17,6 +17,7 @@
 
     const menu = computed(() => [
         { id: 'startseite', label: t('header.menu.home'), href: localePath('/'), children: [] },
+        { id: 'csd', label: t('header.menu.csd'), href: localePath('/csd'), children: [], notification: 'NEU!' },
         { id: 'events', label: t('header.menu.events'), href: localePath('/events'), children: [] },
     ])
 </script>
