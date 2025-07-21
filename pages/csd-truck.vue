@@ -17,7 +17,7 @@
 
 <script lang="ts" setup>
     useSeoMeta({
-        title: 'Der QC auf dem CSD Braunschweig',
-        description: 'Wir sind wieder auf dem CSD Braunschweig und haben cute Buttons für euch in Gepäck!',
+        title: 'DnB beim CSD Braunschweig',
+        description: 'Erlebe die besten Drum and Bass Beats beim CSD in Braunschweig!',
     })
 </script>
