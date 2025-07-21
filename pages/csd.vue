@@ -1,9 +1,10 @@
 <template>
-    <QcHero id="hero" title="Der QC auf dem CSD Braunschweig" />
+    <QcHero id="hero" title="QueerCrew auf dem CSD" />
 
     <section id="content" class="relative z-10 py-16">
         <HeLimiter size="text">
-            <h2 class="mt-0">Wir sind wieder dabei!</h2>
+            <img src="/images/events/2025_08_09_csd.png" alt="QC CSD Stand 2025" class="w-full h-auto rounded-lg" />
+            <h2>Wir sind wieder dabei!</h2>
             <p>
                 Wie letztes Jahr sind wir wieder auf dem CSD Braunschweig – und wir haben cute, handcrafted Buttons für euch in Gepäck.
                 Das Team war wieder fleißig und hat 24 neue Designs gezeichnet, die ihr für nur 1€ pro Button erwerben könnt.
@@ -18,11 +19,6 @@
             </ul>
             <p>
                 <b>Es lohnt sich also, bei uns vorbei zu kommen!</b>
-            </p>
-            <h2>Noch mehr QC auf dem CSD VSE Truck</h2>
-            <p>
-                Wir sind unglaublich stolz, dieses Jahr den DJ Albert für den VSE Truck auf dem CSD Braunschweig zu stellen.
-                Der Truck wird am Samstag, den 09.08.2025, zwischen 13:00 und 15:00 Uhr für euch da sein.
             </p>
         </HeLimiter>
     </section>

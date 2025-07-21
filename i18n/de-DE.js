@@ -13,7 +13,9 @@ export default {
     "header": {
         "menu": {
             "home": "Startseite",
-            "csd": "Wir auf dem CSD",
+            "csd": "CSD Events",
+            "dnb-at-csd": "DnB beim CSD",
+            "qc-at-csd": "Wir auf dem CSD",
             "events": "Unsere Events",
         },
     },

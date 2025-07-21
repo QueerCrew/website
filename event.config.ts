@@ -60,4 +60,20 @@ export default [
         image: '/images/events/2025_08_09_csd.png',
         icsFile: null,
     },
+    {
+        category: 'csd',
+        timezone: 'Europe/Berlin',
+        start: '2025-08-09 13:00',
+        end: '2025-08-09 15:00',
+        title: 'DnB beim CSD',
+        description:
+            'Bock auf fette Beats beim CSD?<br>' +
+            'Dann komm zum VSE-Wagen und feier mit uns! 🎉<br>' +
+            'Am 9. August erwartet dich von 13:00 bis 15:00 Uhr ein Live-Set von <a href="https://www.instagram.com/slipstr.3am/" target="_blank">slipstr.3am</a> mit den feinsten Drum and Bass Tracks – direkt auf der Straße, im Herzen von Braunschweig.<br><br>' +
+            'Pack deine beste Laune, bring richtig Energie mit, und lass uns gemeinsam den CSD zum Beben bringen!<br><br>' +
+            'Wir freuen uns auf dich!',
+        location: 'VSE Wagen, Schlossplatz',
+        image: '/images/events/2025_08_09_csd_truck.png',
+        icsFile: null,
+    }
 ] as EventConfig[]

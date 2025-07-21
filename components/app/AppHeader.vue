@@ -17,7 +17,10 @@
 
     const menu = computed(() => [
         { id: 'startseite', label: t('header.menu.home'), href: localePath('/'), children: [] },
-        { id: 'csd', label: t('header.menu.csd'), href: localePath('/csd'), children: [], notification: 'NEU!' },
+        { id: 'csd', label: t('header.menu.csd'), href: localePath('/csd'), children: [
+            { id: 'dnb-at-csd', label: t('header.menu.dnb-at-csd'), href: localePath('/csd-truck'), children: [] },
+            { id: 'qc-at-csd', label: t('header.menu.qc-at-csd'), href: localePath('/csd'), children: [] },
+        ], notification: 'NEU!' },
         { id: 'events', label: t('header.menu.events'), href: localePath('/events'), children: [] },
     ])
 </script>
