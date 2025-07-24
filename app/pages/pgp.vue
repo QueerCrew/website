@@ -63,7 +63,7 @@
     code
         cursor: pointer
         user-select: all
-        font-size: 1rem
+        font-size: .875rem
         padding: 1rem
         font-weight: 800
         color: var(--color-on-primary)
