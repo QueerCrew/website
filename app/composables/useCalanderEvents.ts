@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import timezone from 'dayjs/plugin/timezone'
 import eventConfig from '~/event.config'
-import type { Event, EventConfig } from '~/types/event'
+import type { Event, EventConfig } from '~~/types/event'
 
 dayjs.extend(timezone)
 
