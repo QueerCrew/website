@@ -18,7 +18,9 @@ jobs:
       - name: Set image tags
         id: tag
         run: |
-          TAGS="${GITHUB_SHA} ${GITHUB_REF_NAME}"
+          SAFE_REF_NAME="${GITHUB_REF_NAME//\//-}"
+
+          TAGS="${GITHUB_SHA} ${SAFE_REF_NAME}"
           if [[ "${GITHUB_REF_NAME}" == "main" ]]; then
             TAGS="latest ${TAGS}"
           fi
