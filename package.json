@@ -17,7 +17,7 @@
     "floating-vue": "^5.2.2",
     "focus-trap-vue": "^4.0.3",
     "nuxt": "^4.0.1",
-    "posthog-js": "^1.257.2",
+    "posthog-js": "^1.258.3",
     "vue": "latest",
     "vue-router": "^4.5.1"
   },
