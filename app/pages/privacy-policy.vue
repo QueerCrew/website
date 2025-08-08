@@ -13,8 +13,8 @@
             <p>
                 Für die Datenverarbeitung auf dieser Webseite ist verantwortlich:<br>
                 Alyx Freuwört<br>
-                Frankfurter Straße 262<br>
-                38122 Braunschweig<br>
+                Echternstraße 9<br>
+                38100 Braunschweig<br>
                 Deutschland
             </p>
             <p>

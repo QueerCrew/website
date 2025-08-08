@@ -6,8 +6,8 @@
             <h2 class="mt-0">Anbieter:</h2>
             <p>
                 Diese Seite wird privat betrieben von <b>Alyx Freuwört</b> – Teil der QueerCrew Gruppenleitung.<br>
-                Frankfurter Straße 262<br>
-                38122 Braunschweig
+                Echternstraße 9<br>
+                38100 Braunschweig
             </p>
             <h2>Kontakt:</h2>
             <p>
