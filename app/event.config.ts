@@ -1,7 +1,7 @@
 // @ts-ignore
 import dayjsRecur from 'dayjs-recur'
 import dayjs from 'dayjs'
-import type { EventConfig } from '~/types/event'
+import type { EventConfig } from '~~/types/event'
 
 dayjs.extend(dayjsRecur)
 
@@ -21,7 +21,7 @@ export default [
         repeat: {
             generateAmount: 4,
             // @ts-ignore
-            generateFunction: () => dayjs().add(-1, 'day').recur().every('Tuesday').daysOfWeek().every([1]).except('2025-07-08').weeksOfMonthByDay(),
+            generateFunction: () => dayjs().add(-1, 'day').recur().every('Tuesday').daysOfWeek().every([1]).except('2025-09-09').weeksOfMonthByDay(),
         },
     },
     {
@@ -43,37 +43,15 @@ export default [
     {
         category: 'qc_irl',
         timezone: 'Europe/Berlin',
-        start: '2025-08-09 12:00',
-        end: '2025-08-09 18:30',
-        title: 'Der QC auf dem CSD Braunschweig',
+        start: '2025-09-09 18:00',
+        end: '2025-09-09 22:00',
+        title: 'Die QueerCrew Stockbrot Party',
         description:
-            '<b>Wir sind wieder auf dem CSD Braunschweig!</b><br>'+
-            'Wie letztes Jahr sind wir wieder auf dem CSD Braunschweig und haben cute Buttons für euch in Gepäck.<br>'+
-            'Für gerade einmal <b>1€</b> könnt ihr euch einen Button aus den 24 handgezeichneten Designs aussuchen.<br>'+
-            'Und für einen Euro mehr gibt\'s gleich 3 Buttons eurer Wahl!<br>'+
-            'Auch könnt ihr euch für 50ct wieder Buttons selbst gestalten.<br>'+
-            'Oben drauf gibt es für jeden Kauf kostenlos eine QC Button und QC Sticker dazu.<br><br>'+
-            '<b>Es lohnt sich also, bei uns vorbei zu kommen!</b><br><br>'+
-            'Wir freuen uns auf euch!<br>' +
+            'Auch in diesem Monat wollen wir euch wieder zu einem Special Event einladen: am Dienstag, den 08.09. ab 18:00 werden wir auf dem Kirchplatz vor dem Emma einen Feuerkorb haben. Wir werden Stockbrot machen und Marshmallows grillen, und gemeinsam das Feuer genießen (alles wie immer kostenlos). Und auch das Emma ist wie gewohnt geöffnet.<br><br>'+
+            'Also übt schon mal eure Lagerfeuer-Lieder; wir sehen uns am Dienstag!<br>'+
             'Euer QC Team ❤️',
-        location: 'Schlossplatz, neben dem VSE Stand',
-        image: '/images/events/2025_08_09_csd.png',
+        location: 'Onkel Emma, Echternstraße 9',
+        image: '/images/events/2025_09_09_stockbrot.png',
         icsFile: null,
     },
-    {
-        category: 'csd',
-        timezone: 'Europe/Berlin',
-        start: '2025-08-09 13:00',
-        end: '2025-08-09 15:00',
-        title: 'DnB beim CSD',
-        description:
-            'Bock auf fette Beats beim CSD?<br>' +
-            'Dann komm zum VSE-Wagen und feier mit uns! 🎉<br>' +
-            'Am 9. August erwartet dich von 13:00 bis 15:00 Uhr ein Live-Set von <a href="https://www.instagram.com/slipstr.3am/" target="_blank">slipstr.3am</a> mit den feinsten Drum and Bass Tracks – direkt auf der Straße, im Herzen von Braunschweig.<br><br>' +
-            'Pack deine beste Laune, bring richtig Energie mit, und lass uns gemeinsam den CSD zum Beben bringen!<br><br>' +
-            'Wir freuen uns auf dich!',
-        location: 'VSE Wagen, Schlossplatz',
-        image: '/images/events/2025_08_09_csd_truck.png',
-        icsFile: null,
-    }
 ] as EventConfig[]
