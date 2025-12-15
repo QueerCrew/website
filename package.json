@@ -16,12 +16,12 @@
     "dayjs-recur": "^1.0.1",
     "floating-vue": "^5.2.2",
     "focus-trap-vue": "^4.1.0",
-    "nuxt": "^4.2.1",
-    "posthog-js": "^1.302.2",
+    "nuxt": "^4.2.2",
+    "posthog-js": "^1.306.1",
     "vue": "latest",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "sass-embedded": "^1.93.3"
+    "sass": "^1.96.0"
   }
 }
