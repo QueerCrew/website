@@ -10,17 +10,20 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^10.2.1",
+    "@emnapi/core": "^1.11.3",
+    "@emnapi/runtime": "^1.11.3",
+    "@nuxtjs/i18n": "^10.6.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "dayjs-nuxt": "^2.1.11",
     "dayjs-recur": "^1.0.1",
+    "esbuild": "^0.28.2",
     "floating-vue": "^5.2.2",
     "focus-trap-vue": "^4.1.0",
-    "nuxt": "^4.3.0",
-    "posthog-js": "^1.336.4",
-    "vue": "latest"
+    "nuxt": "^4.5.2",
+    "posthog-js": "^1.415.1",
+    "vue": "^3.5.41"
   },
   "devDependencies": {
-    "sass": "^1.97.3"
+    "sass": "^1.102.0"
   }
 }
