@@ -54,86 +54,86 @@
 </script>
 
 <style lang="sass" scoped>
-    .he-container.he-section
+.he-container.he-section
+    position: relative
+    display: flex
+    flex-direction: column
+
+    .background
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 0
+        pointer-events: none
+
+    .inner
         position: relative
+        z-index: 1
         display: flex
         flex-direction: column
+        width: 100%
 
-        .background
+    .above,
+    .below
+        position: relative
+        z-index: 2
+        left: 0
+        width: 100%
+
+    .foreground
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 3
+        pointer-events: none
+
+
+
+    &.section-sticky
+        position: sticky
+        top: 0
+        z-index: 1000
+
+
+
+    &.section-shadow-none
+        box-shadow: none
+
+    &.section-shadow-s
+        box-shadow: var(--shadow-s)
+
+    &.section-shadow-m
+        box-shadow: var(--shadow-m)
+
+    &.section-shadow-l
+        box-shadow: var(--shadow-l)
+
+
+
+    &.divider-position-absolute-outer
+        .above
+            position: absolute
+            bottom: 100%
+
+        .below
+            position: absolute
+            top: 100%
+
+    &.divider-position-absolute-inner
+        .above
             position: absolute
             top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            z-index: 0
-            pointer-events: none
 
-        .inner
-            position: relative
-            z-index: 1
-            display: flex
-            flex-direction: column
-            width: 100%
+        .below
+            position: absolute
+            bottom: 0
 
+    &.divider-position-relative
         .above,
         .below
             position: relative
-            z-index: 2
-            left: 0
-            width: 100%
-
-        .foreground
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            z-index: 3
-            pointer-events: none
-
-
-
-        &.section-sticky
-            position: sticky
-            top: 0
-            z-index: 1000
-
-
-
-        &.section-shadow-none
-            box-shadow: none
-
-        &.section-shadow-s
-            box-shadow: var(--shadow-s)
-
-        &.section-shadow-m
-            box-shadow: var(--shadow-m)
-
-        &.section-shadow-l
-            box-shadow: var(--shadow-l)
-
-
-
-        &.divider-position-absolute-outer
-            .above
-                position: absolute
-                bottom: 100%
-
-            .below
-                position: absolute
-                top: 100%
-
-        &.divider-position-absolute-inner
-            .above
-                position: absolute
-                top: 0
-
-            .below
-                position: absolute
-                bottom: 0
-
-        &.divider-position-relative
-            .above,
-            .below
-                position: relative
 </style>

@@ -102,23 +102,23 @@
 </script>
 
 <style lang="sass" scoped>
-    .he-container.he-flex
-        display: flex
+.he-container.he-flex
+    display: flex
 
-        &.flex-wrap
-            flex-wrap: wrap
+    &.flex-wrap
+        flex-wrap: wrap
 
-        &.flex-direction-horizontal
-            flex-direction: row
+    &.flex-direction-horizontal
+        flex-direction: row
 
-            &.reversed:not(.reached-breakpoint)
-                
-                flex-direction: row-reverse
+        &.reversed:not(.reached-breakpoint)
+            
+            flex-direction: row-reverse
 
-        &.flex-direction-vertical
-            flex-direction: column
+    &.flex-direction-vertical
+        flex-direction: column
 
-            &.reversed:not(.reached-breakpoint)
-                
-                flex-direction: column-reverse
+        &.reversed:not(.reached-breakpoint)
+            
+            flex-direction: column-reverse
 </style>

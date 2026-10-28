@@ -23,6 +23,6 @@
 </script>
 
 <style lang="sass" scoped>
-    main
-        word-break: break-word
+main
+    word-break: break-word
 </style>

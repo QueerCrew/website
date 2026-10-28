@@ -14,9 +14,9 @@
 </script>
 
 <style lang="sass" scoped>
-    .he-container.he-card
-        background: var(--color-background)
-        border: 1px solid var(--color-border)
-        border-radius: var(--radius-xl)
-        box-shadow: var(--shadow-s)
+.he-container.he-card
+    background: var(--color-background)
+    border: 1px solid var(--color-border)
+    border-radius: var(--radius-xl)
+    box-shadow: var(--shadow-s)
 </style>

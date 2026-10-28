@@ -69,69 +69,69 @@
 </script>
 
 <style lang="sass" scoped>
-    footer
-        background-color: var(--color-background-soft)
-        color: var(--color-text-soft)
+footer
+    background-color: var(--color-background-soft)
+    color: var(--color-text-soft)
 
+    .top-row
+        display: flex
+        padding-block: 4rem
+        gap: 2rem
+
+        a
+            text-decoration: none
+
+    .copyright-row
+        display: flex !important
+        padding-block: 1rem
+        gap: 1rem
+        align-items: center
+        flex-wrap: wrap
+
+    hr
+        margin: 0
+        border: none
+        border-top: 1px solid var(--color-background)
+
+    ul
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        flex-direction: column
+        gap: .5rem
+
+    li
+        margin: 0
+        padding: 0
+
+    h3
+        margin: 0
+        padding: 0
+        font-size: 1.125rem
+        font-weight: 500
+        color: var(--color-text)
+
+    p
+        margin: 0
+        padding: 0
+
+
+
+@media (max-width: 800px)
+    footer
         .top-row
-            display: flex
-            padding-block: 4rem
+            padding-block: 2rem
+            flex-direction: column
+            align-items: stretch
             gap: 2rem
 
-            a
-                text-decoration: none
-
         .copyright-row
-            display: flex !important
-            padding-block: 1rem
-            gap: 1rem
-            align-items: center
-            flex-wrap: wrap
-
-        hr
-            margin: 0
-            border: none
-            border-top: 1px solid var(--color-background)
-
-        ul
-            list-style: none
-            padding: 0
-            margin: 0
-            display: flex
+            padding-block: 2rem
             flex-direction: column
+            align-items: stretch
             gap: .5rem
 
-        li
-            margin: 0
-            padding: 0
-
-        h3
-            margin: 0
-            padding: 0
-            font-size: 1.125rem
-            font-weight: 500
-            color: var(--color-text)
-
-        p
-            margin: 0
-            padding: 0
-
-    
-    
-    @media (max-width: 800px)
-        footer
-            .top-row
-                padding-block: 2rem
-                flex-direction: column
-                align-items: stretch
-                gap: 2rem
-
-            .copyright-row
-                padding-block: 2rem
-                flex-direction: column
-                align-items: stretch
-                gap: .5rem
-
-                .hide, .spacer
-                    display: none
+            .hide, .spacer
+                display: none
 </style>

@@ -26,55 +26,55 @@
 </script>
 
 <style lang="sass" scoped>
-    header
-        background-image: linear-gradient(to bottom, rgb(#2d2d2d, 1), rgb(#2d2d2d, .7))
-        border-bottom: 1px solid rgb(#2d2d2d, .7)
-        color: var(--color-text)
-        height: 4rem
-        width: 100%
-        position: sticky
-        top: 0
+header
+    background-image: linear-gradient(to bottom, rgb(#2d2d2d, 1), rgb(#2d2d2d, .7))
+    border-bottom: 1px solid rgb(#2d2d2d, .7)
+    color: var(--color-text)
+    height: 4rem
+    width: 100%
+    position: sticky
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1000
+    backdrop-filter: blur(10px) saturate(0%)
+
+    .qc-gay-glow
+        position: absolute
+        top: 100%
         left: 0
         right: 0
-        z-index: 1000
-        backdrop-filter: blur(10px) saturate(0%)
+        height: 3rem
 
-        .qc-gay-glow
-            position: absolute
-            top: 100%
-            left: 0
-            right: 0
+    .layout
+        height: 100%
+        display: grid !important
+        align-items: center
+        gap: .5rem
+        grid-template-columns: auto 1fr auto auto auto
+        grid-template-areas: "logo spacer menu socials language"
+
+        .logo
+            grid-area: logo
+            display: flex
             height: 3rem
+            width: 3rem
+            background-image: url('/images/logo_white.svg')
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            border-radius: var(--radius-m)
 
-        .layout
-            height: 100%
-            display: grid !important
-            align-items: center
-            gap: .5rem
-            grid-template-columns: auto 1fr auto auto auto
-            grid-template-areas: "logo spacer menu socials language"
+        .menu
+            grid-area: menu
 
-            .logo
-                grid-area: logo
-                display: flex
-                height: 3rem
-                width: 3rem
-                background-image: url('/images/logo_white.svg')
-                background-size: contain
-                background-position: center
-                background-repeat: no-repeat
-                border-radius: var(--radius-m)
+        .socials
+            grid-area: socials
 
-            .menu
-                grid-area: menu
+        .language
+            grid-area: language
 
-            .socials
-                grid-area: socials
-
-            .language
-                grid-area: language
-    
-    @media only screen and (max-width: 1023px)
-        header .layout
-            grid-template-areas: "logo spacer socials language menu"
+@media only screen and (max-width: 1023px)
+    header .layout
+        grid-template-areas: "logo spacer socials language menu"
 </style>

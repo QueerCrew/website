@@ -56,27 +56,27 @@
 </script>
 
 <style lang="sass" scoped>
-    .he-limiter
-        display: flex !important
-        flex-direction: column
-        align-items: center
-    code
-        cursor: pointer
-        user-select: all
-        font-size: .875rem
-        padding: 1rem
-        font-weight: 800
-        color: var(--color-on-primary)
-        background: var(--color-primary)
-        background-image: url('/images/paper_white.jpg')
-        background-size: cover
-        background-blend-mode: multiply
-        border-radius: var(--radius-l)
-        display: inline-block
-        font-family: monospace
-        transition: all 0.3s ease
-        box-shadow: var(--shadow-elevation-low)
+.he-limiter
+    display: flex !important
+    flex-direction: column
+    align-items: center
+code
+    cursor: pointer
+    user-select: all
+    font-size: .875rem
+    padding: 1rem
+    font-weight: 800
+    color: var(--color-on-primary)
+    background: var(--color-primary)
+    background-image: url('/images/paper_white.jpg')
+    background-size: cover
+    background-blend-mode: multiply
+    border-radius: var(--radius-l)
+    display: inline-block
+    font-family: monospace
+    transition: all 0.3s ease
+    box-shadow: var(--shadow-elevation-low)
 
-        &:hover
-            box-shadow: var(--shadow-elevation-high)
+    &:hover
+        box-shadow: var(--shadow-elevation-high)
 </style>

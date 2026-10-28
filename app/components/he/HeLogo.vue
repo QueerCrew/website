@@ -26,13 +26,13 @@
 </script>
 
 <style lang="sass" scoped>
-    .he-container.he-logo
-        display: inline-flex
-        align-items: center
-        justify-content: center
-        height: 2rem
+.he-container.he-logo
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    height: 2rem
 
-        .image
-            display: block
-            height: 100%
+    .image
+        display: block
+        height: 100%
 </style>

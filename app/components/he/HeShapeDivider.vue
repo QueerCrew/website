@@ -67,29 +67,29 @@
 </script>
 
 <style lang="sass" scoped>
-    .he-container.he-shape-divider
-        position: relative
-        width: 100%
-        height: 4rem
+.he-container.he-shape-divider
+    position: relative
+    width: 100%
+    height: 4rem
 
-        &.flip-x
-            svg
-                transform: scaleX(-1)
-
-        &.flip-y
-            svg
-                transform: scaleY(-1)
-
-        &.flip-x.flip-y
-            svg
-                transform: scaleX(-1) scaleY(-1)
-
+    &.flip-x
         svg
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            z-index: 0
-            pointer-events: none
+            transform: scaleX(-1)
+
+    &.flip-y
+        svg
+            transform: scaleY(-1)
+
+    &.flip-x.flip-y
+        svg
+            transform: scaleX(-1) scaleY(-1)
+
+    svg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 0
+        pointer-events: none
 </style>

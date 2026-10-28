@@ -53,14 +53,14 @@
 </script>
 
 <style lang="sass" scoped>
-    .image
-        display: block
-        width: 100%
-        aspect-ratio: 2.5
-        object-fit: cover
+.image
+    display: block
+    width: 100%
+    aspect-ratio: 2.5
+    object-fit: cover
 
-    .title
-        font-size: 1.25rem
-        font-weight: 800
-        color: var(--color-text)
+.title
+    font-size: 1.25rem
+    font-weight: 800
+    color: var(--color-text)
 </style>

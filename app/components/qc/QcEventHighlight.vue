@@ -89,48 +89,48 @@
 </script>
 
 <style lang="sass" scoped>
-    .qc-event-highlight.qc-container
+.qc-event-highlight.qc-container
+    display: flex
+    flex-direction: column
+    gap: .25rem
+    padding: .25rem
+    color: var(--color-on-primary)
+    background: var(--color-primary)
+    background-image: url('/images/paper_white.jpg')
+    background-size: cover
+    background-blend-mode: multiply
+    font-family: var(--font-mono)
+    border-radius: .75rem
+
+    > .title
+        font-size: 1rem
+        font-weight: 800
+        text-align: center
+        padding-block: .5rem
+
+.counter
+    display: flex
+    padding: .75rem
+
+    .counter-part
+        flex: 1
         display: flex
         flex-direction: column
-        gap: .25rem
-        padding: .25rem
-        color: var(--color-on-primary)
-        background: var(--color-primary)
-        background-image: url('/images/paper_white.jpg')
-        background-size: cover
-        background-blend-mode: multiply
-        font-family: var(--font-mono)
-        border-radius: .75rem
+        align-items: center
 
-        > .title
-            font-size: 1rem
-            font-weight: 800
-            text-align: center
-            padding-block: .5rem
-
-    .counter
-        display: flex
-        padding: .75rem
-
-        .counter-part
-            flex: 1
+        .number
             display: flex
-            flex-direction: column
-            align-items: center
+            font-size: 2rem
+            line-height: 1
+            font-weight: 800
 
-            .number
-                display: flex
-                font-size: 2rem
-                line-height: 1
-                font-weight: 800
+            .leading
+                color: #2d2d2d90
+                display: inline
 
-                .leading
-                    color: #2d2d2d90
-                    display: inline
+            .count
+                display: inline
 
-                .count
-                    display: inline
-
-            .label
-                font-size: .75rem
+        .label
+            font-size: .75rem
 </style>

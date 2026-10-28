@@ -29,59 +29,59 @@
 </script>
 
 <style lang="sass" scoped>
-    .selection-wrapper
-        display: flex
-        align-items: center
-        height: 2.5rem
-        gap: .5rem
-        padding-inline: .5rem
-        background: var(--color-background-soft)
-        color: var(--color-text-soft)
-        border: 1px solid var(--color-border-focused)
-        border-radius: .5rem
-        font-size: .9rem
+.selection-wrapper
+    display: flex
+    align-items: center
+    height: 2.5rem
+    gap: .5rem
+    padding-inline: .5rem
+    background: var(--color-background-soft)
+    color: var(--color-text-soft)
+    border: 1px solid var(--color-border-focused)
+    border-radius: .5rem
+    font-size: .9rem
 
-        > img
-            height: 1.5rem
+    > img
+        height: 1.5rem
+
+    > .iod-icon
+        font-size: 1.25rem
+        transition: all 100ms
+
+    &:focus,
+    &:hover
+        color: var(--color-text)
 
         > .iod-icon
-            font-size: 1.25rem
-            transition: all 100ms
+            transform: translateY(3px)
+
+    &:focus
+        outline: 3px solid var(--color-info)
+
+.dropdown-wrapper
+    display: flex
+    flex-direction: column
+    padding: .5rem .25rem
+
+    .dropdown-item
+        display: flex
+        align-items: center
+        gap: 1rem
+        padding: .25rem 1rem
+        min-height: 2.5rem
+        color: var(--color-text-soft)
+        font-size: .9rem
+        border-radius: .5rem
+
+        > img
+            height: 1.75rem
 
         &:focus,
         &:hover
+            background: var(--color-background-soft)
             color: var(--color-text)
-
-            > .iod-icon
-                transform: translateY(3px)
 
         &:focus
             outline: 3px solid var(--color-info)
-
-    .dropdown-wrapper
-        display: flex
-        flex-direction: column
-        padding: .5rem .25rem
-
-        .dropdown-item
-            display: flex
-            align-items: center
-            gap: 1rem
-            padding: .25rem 1rem
-            min-height: 2.5rem
-            color: var(--color-text-soft)
-            font-size: .9rem
-            border-radius: .5rem
-
-            > img
-                height: 1.75rem
-
-            &:focus,
-            &:hover
-                background: var(--color-background-soft)
-                color: var(--color-text)
-
-            &:focus
-                outline: 3px solid var(--color-info)
-                outline-offset: -3px
+            outline-offset: -3px
 </style>

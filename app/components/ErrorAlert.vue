@@ -32,16 +32,16 @@
 </script>
 
 <style lang="sass" scoped>
-    .iod-alert
-        &.slide-enter-active,
-        &.slide-leave-active
-            transition: all 200ms ease
+.iod-alert
+    &.slide-enter-active,
+    &.slide-leave-active
+        transition: all 200ms ease
 
-        &.slide-enter-from
-            transform: translateY(-10px)
-            opacity: 0
+    &.slide-enter-from
+        transform: translateY(-10px)
+        opacity: 0
 
-        &.slide-leave-to
-            opacity: 0
-            transform: scale(.8)
+    &.slide-leave-to
+        opacity: 0
+        transform: scale(.8)
 </style>

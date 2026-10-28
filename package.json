@@ -19,11 +19,16 @@
     "esbuild": "^0.28.2",
     "floating-vue": "^5.4.0",
     "focus-trap-vue": "^4.1.0",
-    "nuxt": "^4.6.0",
-    "posthog-js": "^1.438.5",
-    "vue": "^3.5.43"
+    "nuxt": "^4.6.3",
+    "posthog-js": "^1.441.2",
+    "vue": "^3.5.44"
   },
   "devDependencies": {
-    "sass": "^1.105.1"
+    "sass": "^1.106.1"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "core-js": true,
+    "@parcel/watcher": true
   }
 }

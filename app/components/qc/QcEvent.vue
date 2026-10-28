@@ -29,40 +29,39 @@
 </script>
 
 <style lang="sass" scoped>
+.qc-event.qc-container
+    display: flex
+    flex-direction: column
+    background: var(--color-background)
+    background-image: url('/images/paper_black.jpg')
+    background-size: cover
+    background-blend-mode: screen
+    border-radius: .5rem
+    overflow: hidden
+    text-decoration: none
+    transition: all 100ms
 
-    .qc-event.qc-container
+    &:hover
+        box-shadow: var(--shadow-m)
+
+    .image
+        display: block
+        width: 100%
+        aspect-ratio: 2.5
+        object-fit: cover
+
+    .text-card
         display: flex
         flex-direction: column
-        background: var(--color-background)
-        background-image: url('/images/paper_black.jpg')
-        background-size: cover
-        background-blend-mode: screen
-        border-radius: .5rem
-        overflow: hidden
-        text-decoration: none
-        transition: all 100ms
+        padding: 1rem
 
-        &:hover
-            box-shadow: var(--shadow-m)
+        .title
+            font-size: 1rem
+            font-weight: 800
+            color: var(--color-text)
 
-        .image
-            display: block
-            width: 100%
-            aspect-ratio: 2.5
-            object-fit: cover
-
-        .text-card
-            display: flex
-            flex-direction: column
-            padding: 1rem
-
-            .title
-                font-size: 1rem
-                font-weight: 800
-                color: var(--color-text)
-
-            .description,
-            .location
-                font-size: .75rem
-                color: var(--color-text-soft)
+        .description,
+        .location
+            font-size: .75rem
+            color: var(--color-text-soft)
 </style>

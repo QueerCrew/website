@@ -90,55 +90,55 @@
 </script>
 
 <style lang="sass" scoped>
-    .slide-enter-active,
-    .slide-leave-active
-        transition: all 300ms ease-in-out !important
+.slide-enter-active,
+.slide-leave-active
+    transition: all 300ms ease-in-out !important
 
-    .slide-enter-from,
-    .slide-leave-to
-        transform: translateY(2rem)
-        opacity: 0
+.slide-enter-from,
+.slide-leave-to
+    transform: translateY(2rem)
+    opacity: 0
 
-    #cookie-banner
-        position: fixed
-        z-index: 9000
-        bottom: .5rem
-        left: .5rem
+#cookie-banner
+    position: fixed
+    z-index: 9000
+    bottom: .5rem
+    left: .5rem
+    display: flex
+    flex-direction: column
+    width: calc(100% - 1rem)
+    max-width: 26rem
+    max-height: calc(100vh - 1rem)
+    border-radius: var(--radius-xl)
+    overflow-y: scroll
+    background: rgba(34, 34, 34, 0.85)
+    backdrop-filter: blur(20px)
+    border: 1px solid var(--color-border-focused)
+    box-shadow: var(--shadow-s)
+
+    &::after
+        content: ''
+        position: absolute
+        top: -2rem
+        left: -2rem
+        width: 50%
+        aspect-ratio: 1
+        background-image: url(/images/cookie.svg)
+        background-size: 100%
+        background-repeat: no-repeat
+        z-index: 0
+        opacity: .2
+        pointer-events: none
+
+    .page
+        position: relative
+        z-index: 2
         display: flex
         flex-direction: column
-        width: calc(100% - 1rem)
-        max-width: 26rem
-        max-height: calc(100vh - 1rem)
-        border-radius: var(--radius-xl)
-        overflow-y: scroll
-        background: rgba(34, 34, 34, 0.85)
-        backdrop-filter: blur(20px)
-        border: 1px solid var(--color-border-focused)
-        box-shadow: var(--shadow-s)
+        gap: 1rem
+        padding: 1.5rem 1rem
+        line-height: 1.5
 
-        &::after
-            content: ''
-            position: absolute
-            top: -2rem
-            left: -2rem
-            width: 50%
-            aspect-ratio: 1
-            background-image: url(/images/cookie.svg)
-            background-size: 100%
-            background-repeat: no-repeat
-            z-index: 0
-            opacity: .2
-            pointer-events: none
-
-        .page
-            position: relative
-            z-index: 2
-            display: flex
-            flex-direction: column
-            gap: 1rem
-            padding: 1.5rem 1rem
-            line-height: 1.5
-
-            hr
-                border-color: var(--color-border-focused)
+        hr
+            border-color: var(--color-border-focused)
 </style>

@@ -3,6 +3,6 @@
 </template>
 
 <style lang="sass" scoped>
-    .he-container.he-spacer
-        flex: 1
+.he-container.he-spacer
+    flex: 1
 </style>
