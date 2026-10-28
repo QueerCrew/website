@@ -1,8 +1,6 @@
 FROM node:slim AS build
 WORKDIR /app
 
-RUN corepack enable
-
 COPY package.json package-lock.json ./
 
 # Install dependencies
